@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valportifolio</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.ico">
+
+    <script src="menu.js" defer></script>
+
+    <style>
+        .portfolio-roblox {
+            padding: 50px 10%;
+        }
+    
+        .portfolio-item {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+    
+        .portfolio-item video {
+            width: 60%;
+            border-radius: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    
+        .portfolio-item .text {
+            width: 40%;
+        }
+    
+        .portfolio-item .text h2 {
+            font-size: 24px;
+            color: #9d080e; /* Título em vermelho escuro */
+            margin-bottom: 10px;
+        }
+    
+        .portfolio-item .text p {
+            font-size: 18px;
+            color: white; /* Texto do parágrafo em branco */
+            line-height: 1.5;
+        }
+    
+        .descricao-roblox {
+            margin-top: 50px;
+            font-size: 18px;
+            color: #555;
+            line-height: 1.5;
+        }
+    
+        @media (max-width: 900px) {
+            .portfolio-item {
+                flex-direction: column;
+                text-align: center;
+            }
+    
+            .portfolio-item video {
+                width: 100%;
+            }
+    
+            .portfolio-item .text {
+                width: 100%;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+            </div>
+
+
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div>
+    </header>
+
+    <!-- Seção de Portfólio - Roblox -->
+    <main>
+        <section class="portfolio-roblox">
+            <div class="interface">
+                <h2 class="titulo">MEUS PROJETOS NO <span>ROBLOX.</span></h2>
+                <div style="margin-bottom: 50px;"></div>
+                
+                <!-- Descrição de como é trabalhar no Roblox -->
+                <div class="descricao-roblox">
+                    <p style="color: white;">Estou no Roblox Studio há 7 meses, desenvolvendo projetos tanto de forma independente quanto em equipe. Durante esse período, trabalhei em diversas comissões, criando sistemas personalizados para uma variedade de jogos. Tenho uma grande afinidade por jogos de estratégia, especialmente RTS e Tower Defense, que são meus gêneros preferidos, pois combinam raciocínio tático e criatividade. Estou sempre em busca de novos desafios e oportunidades para aplicar minhas habilidades em projetos inovadores</p>
+                </div>
+
+                <!-- Espaçamento adicional após a descrição -->
+                <div style="margin-bottom: 50px;"></div>
+
+                <div class="portfolio-item">
+                    <video controls>
+                        <source src="videos/video1.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
+                    <div class="text">
+                        <h2>Tower Defense (em desenvolvimento)</h2>
+                        <p>Fiz quase todo o jogo junto a um amigo, o jogo ainda está sendo desenvolvido.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <video controls>
+                        <source src="videos/video2.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
+                    <div class="text">
+                        <h2>RTS (Comissão)</h2>
+                        <p>Sistema de camera isometrica estilo warcraft, para jogos RTS, RPG ou MOBA.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <video controls>
+                        <source src="videos/video3.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
+                    <div class="text">
+                        <h2>Simulator</h2>
+                        <p>Trabalhei junto a outro scripter, criando todos os sistemas, auxiliando e ensinando o outro scripter. Fazendo sistemas como Inventario, Rebirth, Pets e etc. </p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <video controls>
+                        <source src="videos/video4.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
+                    <div class="text">
+                        <h2>Sistema de Underwater (Comissão)</h2>
+                        <p>Sistema de respiração e nado, o player perde oxigenio ao longo do tempo quando estiver na agua, recupera quando sai dela, e leva dano se o oxigenio chegar a 0, como no minecraft.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo.png" alt="Logotipo">
+                    </div>
+                    <div class="btn-social">
+                        <a href="https://github.com/vallz0"><button><i class="bi bi-github"></i></button></a>
+                        <a href="https://www.linkedin.com/in/valdircalado/"><button><i class="bi bi-linkedin"></i></button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line-footer borda">
+                <p>
+                    <i class="bi bi-envelope-fill"></i> 
+                    <a href="mailto:valldircalado@gmail.com">valldircalado@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
